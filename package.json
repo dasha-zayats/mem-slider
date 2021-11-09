@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "dasha-zayats"
+    "url": "git+https://github.com/dasha-zayats/mem-slider"
   },
   "keywords": [
     "slider",
