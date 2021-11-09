@@ -1,0 +1,137 @@
+  body{
+    background-color: black;
+    margin: 0px;
+  }
+  .container{
+    height: 500px;
+    width: 750px;
+    margin: 40px auto 0px;
+    overflow: hidden;
+  }
+  .my-slider{
+    display: flex;
+    position: relative;
+    transition: 1s;
+    width: 4000px;
+    height: 500px;
+    left: 0px;
+  }
+  .elem{
+    position: absolute;
+    transition: 1s;
+  }
+  .elem1{
+    left: 0px;
+  }
+  .elem2{
+    left: 1000px;
+  }
+  .elem3{
+    left: 2000px;
+  }
+  .elem4{
+    left: 3000px;
+  }
+
+  .textAndNavPanel{
+    display: flex;
+    flex-flow: row nowrap;
+    height: 50px;
+    width: 750px;
+    margin: 40px auto 0px;
+  }
+  .text-view{
+    position: relative;
+    height: 50px;
+    width: 199px;
+    margin: 0px;
+    overflow: hidden;
+  }
+  .text-slider{
+    position: relative;
+    display: flex;
+    transition: 0.5s;
+    width: 1000px;
+    height: 50px;
+    left: 0px;
+  }
+  .text-place{
+    position: absolute;
+    width: 199px;
+    color: white;
+    font-size: 35px;
+  }  
+  .text1{
+    left: 0px;
+  }
+  .text2{
+    left: 200px;
+  }
+  .text3{
+    left: 400px;
+  }
+  .text4{
+    left: 600px;
+  }
+
+  .nav{
+    width: 550px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+
+  .navElem {
+    width: 20px;
+    height: 20px;
+    border:  solid;
+    border-width: 3px;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .active {
+    background-color: #6495ED;
+  }
+  .navElem:hover {
+    border-color: white;
+  }
+
+  .navElem.active:hover {
+    border-color: white;
+    background-color: white;
+  }
+
+  .nav1{
+    border-color: #6495ED;
+  }
+  .nav2{
+    border-color: #6495ED;
+  }
+  .nav3{
+    border-color: #6495ED;
+  }
+  .nav4{
+    border-color: #6495ED;
+  }
+@media screen and (max-width: 850px) {
+  .textAndNavPanel{
+    flex-flow: column nowrap;
+    margin: 20px auto 0px;
+    height: 100px;
+  }
+  .text-view{
+    order: 1;
+  }
+  .nav{
+    order: 0;
+    justify-content: center;
+    margin-top: 0px;
+    width: 750px;
+  }
+  .elem{
+    position: absolute;
+    transition: 1s;
+  }
+}  
